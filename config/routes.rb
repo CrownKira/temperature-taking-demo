@@ -5,9 +5,9 @@ Rails.application.routes.draw do
       get "post/index"
       post :auth, to: "authentication#create"
       get "/auth" => "authentication#fetch"
-      # get "/temperatures", to: "temperatures#index"
-      # post "/temperature", to: "temperatures#create"
-      # get "/temperature", to: "temperatures#show"
+      get "/temperatures", to: "temperatures#index"
+      post "/temperature", to: "temperatures#create"
+      get "/temperature", to: "temperatures#show"
     end
   end
 end
